@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/content_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_background" />
+
+  
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+            
+            <Button
+                android:id="@+id/main_menu_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_menu_title"
+                android:layout_gravity="center_horizontal"
+			/>
+
+            <Button
+                android:id="@+id/button_main_menu_new_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_menu_new_game"
+                android:layout_marginTop="15dp" 
+                android:onClick="to_new_game"
+                android:layout_gravity="center_horizontal"
+			/>
+            <Button
+                android:id="@+id/button_main_menu_join_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_menu_join_game"
+                android:layout_marginTop="20dp"
+                android:onClick="to_join_game"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:id="@+id/button_main_menu_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_menu_exit"
+                android:layout_marginTop="20dp"
+                android:onClick="exit"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+     
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_play_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GamePlay" >
+
+    <ImageView
+        android:id="@+id/game_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/content_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/game_background" />
+
+    <RelativeLayout
+        android:id="@+id/player_1_score_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/player_1_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/game_player_score_1" />
+
+        <TextView
+            android:id="@+id/text_score_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/score"
+            android:textColor="#FFF73F"
+            android:textIsSelectable="false"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/player_2_score_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/player_2_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/game_player_score_2" />
+
+        <TextView
+            android:id="@+id/text_score_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/score"
+            android:textColor="#FFF73F"
+            android:textIsSelectable="false"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/target_basket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/game_basket" />
+
+    <ImageView
+        android:id="@+id/target_fruit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/game_banana" />
+
+    <RelativeLayout
+        android:id="@+id/timer_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <TextView
+            android:id="@+id/game_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="@string/timer"
+            android:textColor="#FA5112"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/game_timer"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/game_alarm" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/frozen_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/content_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/frozen_screen"
+        android:visibility="invisible" />
+    
+     <ImageView
+        android:id="@+id/player_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/won"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/freezing_count_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textColor="#C7E8EF"
+        android:textIsSelectable="false"
+        android:textSize="180sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
